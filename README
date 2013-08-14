@@ -8,11 +8,11 @@ incompatible with NetBSD bmake. GNU make is not good too.
 
 mk-configure provides a number of include files written in and for
 bmake and a number of standalone programs that should be installed to
-user's host for building a software.
+user's host to build software.
 
 mk-configure features:
 
- - An easy way for building standalone executables, static and shared
+ - An easy way to build standalone executables, static and shared
    libraries written in C, C++, Fortran, Pascal and Objective C; .cat
    and .html files from man pages; .info pages from texinfo sources
    etc. LEX, YACC are also supported. Support for other languages are
@@ -25,7 +25,7 @@ mk-configure features:
    libraries and function implementation, function definitions,
    defines, types, struct members etc.
 
- - A number of built-in checks for, e.g., system endianess, GNU bison
+ - A number of built-in checks for, e.g., system endianness, GNU bison
    or GNU flex programs and many others.
 
  - Automatic dependency analysis built-in for C, C++ and Fortran (not
@@ -33,7 +33,7 @@ mk-configure features:
 
  - Extensibility by writing bmake include files.
 
- - Support for regression tests (see mkc.minitest.mk for the sample).
+ - Support for regression tests (see mkc.minitest.mk for the example).
 
  - mk-configure is small and easy. It is definitely much easier for
    use than GNU autotools, many people think that it is also easier
@@ -129,9 +129,9 @@ HOW TO USE MK-CONFIGURE?
     - Install mk-configure to your system.
     - Develop your software using bmake and mkc.*.mk include files
       provided by mk-configure.
-    - Run 'mkcmake' or 'mkcmake all' for building your software.
+    - Run 'mkcmake' or 'mkcmake all' to build your software.
       (mkcmake is a trivial wrapper over bmake).
-      You need not autoconf/autoheader/automake/aclocal/config.guess/
+      You need no autoconf/autoheader/automake/aclocal/config.guess/
       /autoreconf/config.status/config.sub and blah-blah-blah
 
       BMAKE is magic enough ;-)
@@ -139,7 +139,7 @@ HOW TO USE MK-CONFIGURE?
  Users and software packagers:
     - Install bmake (and optionally sys.mk) to your system.
     - Install mk-configure to your system.
-    - Run bmake for building a software and pass to it
+    - Run bmake to build software and pass to it
       the building options, e.g.
 
          env CC=pcc CFLAGS='-O0 -g' PREFIX=/opt/software \
@@ -186,7 +186,7 @@ WHAT'S WRONG WITH GNU AUTOTOOLS (IN SHORT)?
  7) Many (most?) real-life configure.ac break the cross-compiling.
 
  8) In my view autotools (automake and autoconf) is BADLY designed.  I
-   personally dislike code generation idea because it is ... extreamly
+   personally dislike code generation idea because it is ... extremely
    ugly :-/ approach even if the generated code is claimed to be
    "portable".  Today it is not a problem to install any kind of
    software building tools and to them more efficiently.
